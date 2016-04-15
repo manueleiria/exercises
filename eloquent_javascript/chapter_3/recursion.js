@@ -5,12 +5,12 @@ console.log(isEven(-1));
 function isEven(number) {
   if (number == 0) {
     return true;
-  } else if (number == 1 || number == -1) {
+  } else if (number == 1) {
     return false;
-  } else if (number < 0) {
-    number *= number;
+  } else if (number > 0) {
     return isEven(number - 2);
   } else {
-    return isEven(number - 2);
+    number *= (-1);
+    return isEven(number);
   };
 }
