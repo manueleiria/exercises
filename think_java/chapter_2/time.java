@@ -13,7 +13,7 @@ class Time {
     dayPercent = secondsDay * 100 / (24 * 60 * 60);
 
     System.out.println(secondsDay + " seconds have past since the day begun.");
-    System.out.println(secondsRemaining + " seconds remain until the end of the day. ");
+    System.out.println(secondsRemaining + " seconds remain until the end of the day.");
     System.out.println(dayPercent + "% of the day has ellapsed.");
   }
 }
