@@ -1,4 +1,4 @@
-/*”Stump the Chump”:
+/*"Stump the chump":
 
 Start with a program that compiles and runs correctly. One player turns
 away while the other player adds an error to the program. Then the first

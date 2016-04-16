@@ -1,5 +1,5 @@
-  class Hello {
-//class Hello
+  class Hello2 {
+//class Hello2
   /*Main.java:1: error: '{' expected */
 
     public static void main(String[] args) {

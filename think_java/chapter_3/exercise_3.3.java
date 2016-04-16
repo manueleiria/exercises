@@ -1,4 +1,4 @@
-class Main {
+class Main5 {
 
   public static void zool(int number, String pet, String street) {
     System.out.println(number + ", " + pet + ", " + street);

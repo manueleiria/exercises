@@ -5,8 +5,8 @@ function countBs(aString, aLetter) {
   for (i = 0; i < aString.length; i++) {
     if (aString.charAt(i) == 'B') {
       bCount++;
-    };
-  };
+    }
+  }
   return (bCount + '; ' + countChar(aString, aLetter));
 }
 
@@ -15,7 +15,7 @@ function countChar(aString, aLetter) {
   for (i = 0; i < aString.length; i++) {
     if (aString.charAt(i) == aLetter) {
       letterCount++;
-    };
-  };
+    }
+  }
   return letterCount;
 }

@@ -1,4 +1,4 @@
-class Date {
+class Date2 {
 
   public static void printAmerican(String day, String month, int date, int year) {
     System.out.println("American format:");

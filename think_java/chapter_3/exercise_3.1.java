@@ -1,7 +1,7 @@
 /*Draw a stack frame that shows the state of the program in
   Section 3.10 when main invokes printTime with the arguments 11 and 59.*/
 
-class Main {
+class Main3 {
 
   public static void printTime(int hour, int minute) {
     System.out.print(hour);

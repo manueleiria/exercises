@@ -16,7 +16,7 @@ TIME PING IS INVOKED.
   baffle    |        | ||
   ping      |        | ||*/
 
-class Main {
+class Main4 {
 
   public static void zoop() {
     baffle();

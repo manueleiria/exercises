@@ -3,5 +3,5 @@ function minimum(x, y) {
     return y;
   } else {
     return x;
-  };
+  }
 }
