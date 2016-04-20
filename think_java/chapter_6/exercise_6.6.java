@@ -14,7 +14,7 @@ prod|       m|1|       n|1||
 
 3. EXPLAIN IN A FEW WORDS WHAT PROD DOES.
 
-Prod produces factorials.
+Prod produces factorials within the range displayed.
 
 4. REWRITE PROD WITHOUT THE TEMPORARY VARIABLES RECURSE AND RESULT.
 
