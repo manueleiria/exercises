@@ -54,9 +54,10 @@ class Main {
   
   public static int[] histogram(int[] values, int counter) {
     int[] counts = new int[counter];
+    int range = (100 / counter) + (100 % counter);
     for (int i = 0; i < counter; i++) {
       for (int value : values) {
-        if (values[value] >= (i * counter) && values[value] < (i * counter + counter)) {
+        if (values[value] >= (i * range) && values[value] < (i * range + range)) {
           counts[i]++;
         }
       }
