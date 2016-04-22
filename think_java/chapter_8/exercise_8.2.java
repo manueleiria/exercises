@@ -6,7 +6,7 @@ class Main {
     while (i < a.length) {
       kiwi = kiwi * a[i];
       i++;
-    }
+    };
     return kiwi;
   }
   //Method to search the array for a specific value, and return its index.
@@ -14,8 +14,8 @@ class Main {
     for (int i = 0; i < a.length; i++) {                                        //i     == index
       if (a[i] == grape) {
         return i;
-      }
-    }
+      };
+    };
     return -1;
   }
   //Method to count the amount of a specific value in the array.
@@ -24,8 +24,8 @@ class Main {
     for (int pine: a) {                                                         //pine  == index
       if (pine == apple) {
         pear++;
-      }
-    }
+      };
+    };
     return pear;
   }
 }
