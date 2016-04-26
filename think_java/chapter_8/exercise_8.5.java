@@ -20,11 +20,13 @@ class Main {
   public static boolean[] sieve(int n) {
     boolean[] a = new boolean[n];
     for (int i = 2; i < a.length; i++) {a[i] = true;};
-    for (int i = 2; i < a.length; i++) {if (a[i] == true) {
-      for (int j = i * i; j < n; j = j + i) {
-        a[j] = false;
+    for (int i = 2; i < a.length; i++) {
+      if (a[i] == true) {
+        for (int j = i * i; j < n; j = j + i) {
+          a[j] = false;
+        };
       };
-    };};
+    };
     return a;
   }
 }
