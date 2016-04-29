@@ -5,8 +5,7 @@ class Main {
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     System.out.print("Please input size of array to check for prime numbers.");
-    int n = in.nextInt();
-    String isPrime = "not prime";
+    int n = in.nextInt();  
     boolean[] a = sieve(n + 1);
     for (int i = 0; i < a.length; i++) {
       if (a[i] == true) {
