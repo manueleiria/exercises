@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/manueleiria/exercises.git"
   },
-  "author": "",
+  "author": "Manuel Leiria",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/manueleiria/exercises/issues"
   },
-  "homepage": "https://github.com/manueleiria/exercises#readme"
+  "homepage": "https://github.com/manueleiria/exercises#readme",
+  "dependencies": {
+    "inquirer": "^1.0.2"
+  }
 }
