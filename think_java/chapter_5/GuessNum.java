@@ -2,7 +2,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-class GuessStarter {
+class GuessNum {
   public static void main(String[] args) {
     Random random = new Random();
     int rdmNumber = random.nextInt(100) + 1;
