@@ -5,12 +5,12 @@ import java.util.Scanner;
 class MaxInRange {
 
   public static void main(String[] args) {
-    int size = inputNum("Starting at 0, up to what value should your array be?");
+    int size = inputNum("How many indexes should your array have?");
     int[] arr = createIntArr(size);
     int lowIndex = indexRangeMaker(arr, true, 0);
     int highIndex = indexRangeMaker(arr, false, lowIndex);
     int currentIndex = maxInRange(arr, lowIndex, highIndex);
-    System.out.println("The largest element in the array is element " + currentIndex + ", with value " + arr[currentIndex]);
+    System.out.println("The largest element in the array is in index " + currentIndex + ", with value " + arr[currentIndex]);
   }
 
 
@@ -58,7 +58,7 @@ class MaxInRange {
   public static int[] createIntArr(int size) {
     int[] arr = new int[size + 1];
     for (int i = 0; i <= size; i++) {
-      arr[i] = i;
+      arr[i] = (int)(Math.random() * (size - 0));
     }
     return arr;
   }
@@ -70,7 +70,7 @@ class MaxInRange {
     } else if (arr[lowIndex] < arr[highIndex]) {
       return maxInRange(arr, lowIndex+1, highIndex);
     } else {
-      return arr[lowIndex];
+      return lowIndex;
     }
   }
 }
