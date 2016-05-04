@@ -9,8 +9,8 @@ class MaxInRange {
     int[] arr = createIntArr(size);
     int lowIndex = indexRangeMaker(arr, true, 0);
     int highIndex = indexRangeMaker(arr, false, lowIndex);
-    int currentIndex = maxInRange(arr, lowIndex, highIndex);
-    System.out.println("The largest element in the array is in index " + currentIndex + ", with value " + arr[currentIndex]);
+    int highestValIndex = maxInRange(arr, lowIndex, highIndex);
+    System.out.println("The largest element in the array is in index " + highestValIndex + ", with value " + arr[highestValIndex]);
   }
 
 
