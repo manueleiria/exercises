@@ -46,7 +46,7 @@ class MaxInRange {
 
   public static int inputArrIndex(int[] arr, String message) {
     int val = inputNum(message);
-    if (val > arr.length || val < 0) {
+    if (val > arr.length-1 || val < 0) {
       System.out.println("ERROR: The inputted value is out of bounds.");
       return inputArrIndex(arr, message);
     } else {
