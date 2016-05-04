@@ -63,7 +63,7 @@ class MaxInRange {
     return arr;
   }
 
-//Calculate Maximum in Range for Arrays
+//Calculate maximum in range for arrays
   public static int maxInRange(int[] arr, int lowIndex, int highIndex) {
     if (arr[lowIndex] > arr[highIndex]) {
       return maxInRange(arr, lowIndex, highIndex-1);
