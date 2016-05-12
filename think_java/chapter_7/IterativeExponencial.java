@@ -20,26 +20,37 @@ Considering the function only properly accepts positive values, negative values 
 
 */
 class IterativeExponencial {
+
+
   public static void main(String[] args) {
+
     for (double i = 0.1; i <= 100; i = i * 10) {
       check(i);
     }
+
     for (double i = -0.1; i >= -100; i = i * 10) {
       check(i);
     }
   }
+
+
   public static double myexp(double x, double n) {
     double result = 1.0;
     double numenator = x;
     double denominator = 1.0;
+
     for (double i = 1; i <= n; i++) {
       numenator = numenator * x;
       denominator = denominator * i;
       result = result + numenator / denominator;
     }
+
     return result;
   }
+
+
   public static void check(double x) {
+    
     System.out.printf(x + " \t" + myexp(x, 16.0) + "    \t" + Math.exp(x) + "\n");
   }
 }

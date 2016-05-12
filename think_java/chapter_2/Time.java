@@ -1,6 +1,7 @@
 //Exercise 2.3
 class Time {
 
+
   public static void main(String[] args) {
     int hour, minute, second;
     int secondsDay, secondsNow, secondsRemaining, dayPercent;

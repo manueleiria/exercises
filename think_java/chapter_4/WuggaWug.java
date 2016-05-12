@@ -23,11 +23,13 @@ It throws a runtime error, the program enters an infinite loop.*/
 
 class WuggaWug {
 
+
   public static void zoop() {
     baffle();
     System.out.print("You wugga ");
     baffle();
   }
+
 
   public static void main(String[] args) {
     System.out.print("No, I ");
@@ -36,13 +38,14 @@ class WuggaWug {
     baffle();
   }
 
+
   public static void baffle() {
     System.out.print("wug");
     ping();
   }
 
+
   public static void ping() {
     System.out.println(".");
   }
-
 }
