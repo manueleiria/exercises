@@ -12,10 +12,14 @@ class Recurse{
     System.out.println(reverseString("This is a string."));
     System.out.println();
 
+    System.out.println(isPalindrome("saviivas"));
+    System.out.println();
+
     System.out.println(first("First"));
     System.out.println(rest("Second"));
     System.out.println(middle("Third"));
     System.out.println(length("All"));
+
   }
 
 
@@ -41,6 +45,27 @@ class Recurse{
       s = reverseString(rest(s)) + first(s);
     }
     return s;
+  }
+
+
+  public static boolean isPalindrome(String s) {
+    boolean isPalindrome = false;
+
+    if (s.length() == 1) {
+      isPalindrome = true;
+    }
+
+    if (s.length() == 2) {
+
+      if (String.valueOf(first(s)).equals(rest(s))) {
+        isPalindrome = true;
+      }
+
+    } else if (isPalindrome(middle(s))) {
+      isPalindrome = true;
+    }
+    
+    return isPalindrome;
   }
 
   /**
